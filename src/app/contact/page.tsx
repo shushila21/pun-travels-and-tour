@@ -82,7 +82,7 @@ export default function Contact() {
             <br />
             9851131849/981362912
             <br />
-            951362812/9866557399
+            981362812/9866557399
           </p>
           <div className="text-blue-600 text-3xl">
             <span className="material-icons">email</span>
