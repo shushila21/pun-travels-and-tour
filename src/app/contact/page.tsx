@@ -56,13 +56,15 @@ export default function Contact() {
   const isFormEmpty = !formData.name || !formData.email || !formData.subject;
 
   return (
-    <section id="contact" className="bg-white flex flex-col p-20">
-      <h2 className="text-3xl font-bold text-center mb-4">Contact Us</h2>
-      <h2 className="text-4xl font-semibold text-center mb-8">
+    <section id="contact" className="bg-white flex flex-col py-10 px-5 xl:p-20">
+      <h2 className="text-3xl font-bold text-center mb-2 xl:mb-4">
+        Contact Us
+      </h2>
+      <h2 className="xl:text-4xl text-3xl font-semibold text-center mb-8">
         Contact For Any Query
       </h2>
 
-      <div className="w-full grid grid-cols-3">
+      <div className="w-full grid xl:grid-cols-3 gap-5">
         {/* Contact Info Section */}
         <div className="bg-gray-100 p-8 rounded-xl flex flex-col items-center space-y-4">
           <div className="text-blue-600 text-3xl">
@@ -89,11 +91,11 @@ export default function Contact() {
         </div>
 
         {/* Form Section */}
-        <div className="px-8 col-span-2">
+        <div className="xl:px-8 xl:col-span-2">
           <h3 className="text-xl font-bold mb-4">Send us a message</h3>
           <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="flex gap-4">
-              <div className="relative w-1/2">
+            <div className="flex flex-col xl:flex-row gap-4">
+              <div className="relative xl:w-1/2">
                 <label className="block mb-1">
                   Your Name <span className="text-red-500">*</span>
                 </label>
@@ -106,7 +108,7 @@ export default function Contact() {
                   value={formData.name}
                 />
               </div>
-              <div className="relative w-1/2">
+              <div className="relative xl:w-1/2">
                 <label className="block mb-1">
                   Your Email <span className="text-red-500">*</span>
                 </label>

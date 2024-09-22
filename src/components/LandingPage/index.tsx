@@ -1,14 +1,9 @@
 "use client";
 
-import React, { useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
-import ServiceCard from "../common/ServiceCard";
-import ContactUs from "../ContactUs";
-import services from "@/constants/services";
-import aboutUs from "@/constants/aboutUs";
-import CoverImage from "../common/CoverImage";
-import Services from "@/app/services/page";
+import { useRouter } from "next/navigation";
 import About from "@/app/about/page";
+import Services from "@/app/services/page";
+import Contact from "@/app/contact/page";
 
 export default function LandingPage() {
   const router = useRouter();
@@ -19,12 +14,12 @@ export default function LandingPage() {
   };
 
   return (
-    <section id="#" className="relative">
-      <div className="relative mt-24">
+    <section id="home" className="pt-16 relative">
+      <div className="relative">
         <img
           src="/carousel-3.jpg"
           alt="Hero background"
-          className="w-full object-cover h-[calc(100vh-92px)]"
+          className="w-full object-cover h-[calc(100vh-64px)]"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center text-white px-4">
@@ -40,7 +35,7 @@ export default function LandingPage() {
               className="bg-primary-200 text-white px-8 py-3 rounded-full text-lg font-semibold"
               onClick={handleContactRedirect}
             >
-              ContactUs Us
+              Contact Us
             </button>
           </div>
         </div>
@@ -53,7 +48,7 @@ export default function LandingPage() {
       <Services />
 
       {/* contact section */}
-      <ContactUs />
+      <Contact />
     </section>
   );
 }

@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="grid grid-cols-2 px-40 gap-10 py-40 bg-white w-full"
+      className="grid md:grid-cols-2 px-5 py-10 xl:px-40 gap-10 xl:py-40 bg-white w-full"
     >
       {/* Left Image Section */}
       <div
@@ -21,7 +21,7 @@ export default function About() {
 
       {/* Right Content Section */}
       <div
-        className="p-10"
+        className="xl:p-10"
         style={{
           background:
             "linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/about-img-1.png')",
