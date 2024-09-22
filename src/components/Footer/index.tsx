@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-100 text-white py-12 px-20">
+    <footer className="bg-primary-100 text-white px-5 py-12 xl:px-20">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Get In Touch Section */}
         <div>

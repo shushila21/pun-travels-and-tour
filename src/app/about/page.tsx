@@ -1,6 +1,5 @@
-import CoverImage from "@/components/common/CoverImage";
 import aboutUs from "@/constants/aboutUs";
-import { Metadata } from "next";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -14,9 +13,15 @@ export default function About() {
           border: "50px solid",
           borderColor: "transparent #13357B transparent #13357B",
         }}
-        className="col-span-1 w-full max-w-[700px] max-h-[700px] "
+        className="col-span-1 w-full max-w-[700px] aspect-square relative"
       >
-        <img src="travel-img-1.jpg" className="h-full w-full" alt="" />
+        <Image
+          src="/travel-img-1.jpg"
+          alt="Travel image"
+          fill
+          sizes="(max-width: 700px) 100vw, 700px"
+          style={{ objectFit: "cover" }}
+        />
       </div>
 
       {/* Right Content Section */}
@@ -45,9 +50,10 @@ export default function About() {
 
         <p className="text-gray-600 mb-6">
           Pun Travels & Tours has been providing unparalleled travel experiences
-          to its customers for over a decade. Whether you're exploring domestic
-          destinations or flying internationally, we offer seamless ticket
-          booking services, customized tours, and unforgettable experiences.
+          to its customers for over a decade. Whether you`&apos;`re exploring
+          domestic destinations or flying internationally, we offer seamless
+          ticket booking services, customized tours, and unforgettable
+          experiences.
         </p>
         <p className="text-gray-600 mb-6">
           Our dedicated team is committed to making your travel dreams a

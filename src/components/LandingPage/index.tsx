@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import About from "@/app/about/page";
 import Services from "@/app/services/page";
 import Contact from "@/app/contact/page";
+import Image from "next/image";
 
 export default function LandingPage() {
   const router = useRouter();
@@ -15,11 +16,14 @@ export default function LandingPage() {
 
   return (
     <section id="home" className="pt-16 relative">
-      <div className="relative">
-        <img
+      <div className="relative w-full h-[calc(100vh-64px)]">
+        <Image
           src="/carousel-3.jpg"
           alt="Hero background"
-          className="w-full object-cover h-[calc(100vh-64px)]"
+          className="object-cover"
+          fill
+          priority
+          // Optional: for optimizing loading of above-the-fold content
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center text-white px-4">

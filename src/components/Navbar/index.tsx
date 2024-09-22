@@ -1,8 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
 
 const navItems = [
   { label: "Home", path: "#home" },
@@ -30,10 +31,15 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white z-50 shadow-md">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+    <nav className="fixed top-0 left-0 right-0 mx-auto bg-white z-50 shadow-lg">
+      <div className="px-5 xl:px-10 py-3 flex justify-between items-center w-full">
         <Link href="#home">
-          <img src="/full-logo.png" alt="puntravel Logo" width={150} />
+          <Image
+            src="/full-logo.png"
+            alt="puntravel Logo"
+            width={160}
+            height={155}
+          />
         </Link>
         <div className="hidden md:flex space-x-4">
           {navItems.map((item) => (

@@ -1,14 +1,15 @@
+import Image from "next/image";
 import React from "react";
 
 interface ICoverImageProps {
-  image?: string;
+  image: string;
   className?: string;
 }
 
 export default function CoverImage({ image, className }: ICoverImageProps) {
   return (
     <div className="relative">
-      <img
+      <Image
         src={image}
         alt="Hero background"
         className={`w-full object-cover h-[calc(100vh-400px)] ${className}`}
