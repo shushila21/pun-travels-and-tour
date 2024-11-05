@@ -23,9 +23,11 @@ export default function Footer() {
             </li>
             <li className="flex items-center">
               <span className="mr-2">📠</span>
-              9851131849/981362912
+              9851362812/9851131849
               <br />
-              951362812/9866557399
+              9818443520/9851362912
+              <br />
+              9866557399
             </li>
           </ul>
           {/* Social Icons */}

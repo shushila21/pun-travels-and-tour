@@ -76,9 +76,11 @@ export default function Contact() {
           <p className="text-center text-gray-700">
             01-5908982/01-4951960
             <br />
-            9851131849/981362912
+            9851362812/9851131849
             <br />
-            981362812/9866557399
+            9818443520/9851362912
+            <br />
+            9866557399
           </p>
           <div className="text-primary-200">
             <span className="material-icons !text-6xl">email</span>
