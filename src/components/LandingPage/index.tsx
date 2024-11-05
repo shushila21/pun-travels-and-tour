@@ -5,6 +5,7 @@ import About from "@/app/about/page";
 import Services from "@/app/services/page";
 import Contact from "@/app/contact/page";
 import Image from "next/image";
+import Booking from "@/app/Booking/page";
 
 export default function LandingPage() {
   const router = useRouter();
@@ -50,6 +51,9 @@ export default function LandingPage() {
 
       {/* services section */}
       <Services />
+
+      {/* contact section */}
+      <Booking />
 
       {/* contact section */}
       <Contact />

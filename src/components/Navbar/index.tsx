@@ -10,6 +10,7 @@ const navItems = [
   { label: "About Us", path: "#about" },
   { label: "Services", path: "#services" },
   { label: "Contact Us", path: "#contact" },
+  { label: "Book Now", path: "#booking" },
 ];
 
 export default function Navbar() {
@@ -19,11 +20,11 @@ export default function Navbar() {
 
   useEffect(() => {
     const { hash } = window.location;
-    if (!hash) {
-      setActiveTab("/");
-      return;
+    if (!hash || hash === "#home") {
+      setActiveTab("#home");
+    } else {
+      setActiveTab(hash);
     }
-    setActiveTab(hash);
   }, [params]);
 
   const toggleMenu = () => {
@@ -37,8 +38,8 @@ export default function Navbar() {
           <Image
             src="/full-logo.png"
             alt="puntravel Logo"
-            width={160}
-            height={155}
+            width={140}
+            height={140}
           />
         </Link>
         <div className="hidden md:flex space-x-4">

@@ -56,26 +56,22 @@ export default function Contact() {
   const isFormEmpty = !formData.name || !formData.email || !formData.subject;
 
   return (
-    <section id="contact" className="bg-white flex flex-col py-10 px-5 xl:p-20">
-      <h2 className="text-3xl font-bold text-center mb-2 xl:mb-4">
-        Contact Us
-      </h2>
-      <h2 className="xl:text-4xl text-3xl font-semibold text-center mb-8">
-        Contact For Any Query
-      </h2>
-
-      <div className="w-full grid xl:grid-cols-3 gap-5">
+    <section
+      id="contact"
+      className="bg-white flex flex-col py-10 px-5 xl:py-20 xl:px-32"
+    >
+      <div className="w-full grid xl:grid-cols-3 gap-12">
         {/* Contact Info Section */}
         <div className="bg-gray-100 p-8 rounded-xl flex flex-col items-center space-y-4">
-          <div className="text-blue-600 text-3xl">
-            <span className="material-icons">place</span>
+          <div className="text-primary-200">
+            <span className="material-icons !text-6xl">place</span>
           </div>
           <p className="text-center text-gray-700">
             Balaju-16,
             <br /> Kathmandu, Nepal
           </p>
-          <div className="text-blue-600 text-3xl">
-            <span className="material-icons">phone</span>
+          <div className="text-primary-200">
+            <span className="material-icons !text-6xl">phone</span>
           </div>
           <p className="text-center text-gray-700">
             01-5908982/01-4951960
@@ -84,14 +80,20 @@ export default function Contact() {
             <br />
             981362812/9866557399
           </p>
-          <div className="text-blue-600 text-3xl">
-            <span className="material-icons">email</span>
+          <div className="text-primary-200">
+            <span className="material-icons !text-6xl">email</span>
           </div>
           <p className="text-center text-gray-700">puntravel01@gmail.com</p>
         </div>
 
         {/* Form Section */}
         <div className="xl:px-8 xl:col-span-2">
+          <h2 className="text-3xl font-bold text-center mb-2 xl:mb-4">
+            Contact Us
+          </h2>
+          <h2 className="xl:text-4xl text-3xl font-semibold text-center mb-8">
+            Contact For Any Query
+          </h2>
           <h3 className="text-xl font-bold mb-4">Send us a message</h3>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="flex flex-col xl:flex-row gap-4">
@@ -125,7 +127,7 @@ export default function Contact() {
             <div className="relative">
               <label className="block mb-1">Phone Number</label>
               <input
-                type="text"
+                type="number"
                 name="phone"
                 placeholder="Your Phone Number"
                 className="w-full p-2 border rounded"
@@ -171,7 +173,7 @@ export default function Contact() {
       </div>
 
       {/* Google Map Section */}
-      <div className="mt-10">
+      <div className="mt-16">
         <h3 className="text-3xl font-bold mb-4">Find Us Here</h3>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28251.82713003318!2d85.29566093647105!3d27.733386924697257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d8293846af74f49%3A0x89f33983007ab4d!2sPun%20Travels%20%26%20Tours!5e0!3m2!1sen!2snp!4v1726944594805!5m2!1sen!2snp"
