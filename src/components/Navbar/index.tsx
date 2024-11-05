@@ -38,7 +38,7 @@ export default function Navbar() {
           <Image
             src="/full-logo.png"
             alt="puntravel Logo"
-            width={140}
+            width={130}
             height={140}
           />
         </Link>
