@@ -69,15 +69,15 @@ export default function Booking() {
   return (
     <div
       id="booking"
-      className="text-white py-24 px-32"
+      className="text-white py-24 px-5 xl:px-32"
       style={{
         background:
           "linear-gradient(rgba(19, 53, 123, .8), rgba(19, 53, 123, .8)), url('/tour-booking-bg.jpg')",
       }}
     >
-      <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-20 items-center">
+      <div className="w-full mx-auto sm:grid sm:grid-cols-5 gap-20 items-center">
         {/* Left Section - Booking Info */}
-        <div className="col-span-2">
+        <div className="col-span-2 w-full">
           <h3 className="text-lg font-semibold">BOOKING</h3>
           <h1 className="text-4xl font-bold mb-4">Online Booking</h1>
           <p className="mb-4">
